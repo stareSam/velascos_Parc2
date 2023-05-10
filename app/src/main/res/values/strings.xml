@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gato</string>
+    <string name="jugador2_puntuacion">Jugador 2: X</string>
+    <string name="jugador1_score">Jugador 1: O</string>
+    <string name="puntuacion">Puntuación</string>
+    <string name="reiniciar_juego">Reiniciar Juego</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:paddingTop="30dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/puntuacionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/puntuacion"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/jugador1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jugador1_score"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"
+            android:paddingLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/jugador2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jugador2_puntuacion"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_color"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="40dp">
+        <Button
+            android:id="@+id/btn00"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/textsize_button"/>
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/textsize_button"/>
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/textsize_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/textsize_button"/>
+        <Button
+            android:id="@+id/btn11"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/textsize_button"/>
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/textsize_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="40dp">
+        <Button
+            android:id="@+id/btn20"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/textsize_button"/>
+        <Button
+            android:id="@+id/btn21"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/textsize_button"/>
+        <Button
+            android:id="@+id/btn22"
+            android:layout_width="@dimen/square_btn_size"
+            android:layout_height="@dimen/square_btn_size"
+            android:layout_margin="@dimen/btn_margin"
+            android:background="@drawable/custom_button"
+            android:textSize="@dimen/textsize_button"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/background_light"
+            android:paddingHorizontal="@dimen/layout_margin"
+            android:text="@string/reiniciar_juego"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
